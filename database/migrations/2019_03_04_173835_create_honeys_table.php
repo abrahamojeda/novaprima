@@ -18,10 +18,10 @@ class CreateHoneysTable extends Migration
             $table->integer('quantity')->unsigned();
             $table->string('lot');
             $table->string('observations');
-            $table->unsignedInteger('responsable'); //pendiente de hacer tabla
-            $table->foreign('responsable')->references('id')->on('responsables');
-            $table->unsignedInteger('provider');   //pendiente de hacer tabla
-            $table->foreign('provider')->references('id')->on('providers');
+            $table->unsignedInteger('responsable_id'); //pendiente de hacer tabla
+            $table->foreign('responsable_id')->references('id')->on('responsables');
+            $table->unsignedInteger('provider_id');   //pendiente de hacer tabla
+            $table->foreign('provider_id')->references('id')->on('providers');
             $table->boolean('colour');
             $table->boolean('smell');
             $table->boolean('flavor');

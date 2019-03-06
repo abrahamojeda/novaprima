@@ -11,10 +11,10 @@ class Provider extends Model
         return $this->hasMany(tomatoes::class, 'id');
     }
 
-    // public function honeys()
-    // {
-    //     return $this->hasMany(honeys::class);
-    // }
+    public function honeys()
+    {
+        return $this->hasMany(honeys::class, 'id');
+    }
 
     // public function materialNames()
     // {

@@ -16,6 +16,11 @@ class Provider extends Model
         return $this->hasMany(honeys::class, 'id');
     }
 
+    public function scopeTomatoeProviders($query)
+    {
+        return $query->where('material', 'Tomate');
+    }
+
     // public function materialNames()
     // {
     //     return $this->

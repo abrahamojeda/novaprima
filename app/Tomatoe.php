@@ -15,14 +15,8 @@ class Tomatoe extends Model
         return $this->belongsTo(Responsable::class);
     }
 
-    public function provider()
-    {
-        return $this->belongsTo(Provider::class)->where('material', 'Tomate');
-    }
-
-    // public function options()
+    // public function provider()
     // {
-    //     $models = \App\Provider::all();
-    //     return $models->pluck('id', 'name')->all();
+    //     return $this->belongsTo(Provider::class);
     // }
 }

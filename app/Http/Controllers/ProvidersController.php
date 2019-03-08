@@ -12,4 +12,11 @@ class ProvidersController extends Controller
         $provider->save();
         return 'Saved';
     }
+
+    // public function optionsTomate()
+    // {
+    //     $provider = DB::select('select * from providers where material = ?', [tomate]);
+
+    //     return view('providers.options', ['id' => $provider]);
+    // }
 }

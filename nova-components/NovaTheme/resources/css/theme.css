@@ -1,0 +1,37 @@
+:root {
+  --primary: rgb(117, 214, 115);
+  --primary-dark: rgb(84, 155, 83);
+  --primary-70: rgb(117, 214, 115);
+  --primary-50: rgb(117, 214, 115);
+  --primary-30: rgb(117, 214, 115);
+  --primary-10: rgb(117, 214, 115);
+  --logo: #ffffff;
+  --sidebar-icon: #34de59;
+}
+
+.text-white{
+  font-weight: bold;
+}
+
+.bg-logo{
+  color: black;
+}
+
+.bg-grad-sidebar {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#5cb85c),
+    /* from(rgb(254, 1, 129, 1)), */
+    to(#82dd82)
+  );
+
+  background-image: linear-gradient(0deg, 
+  rgb(117, 214, 115), 
+  rgb(58, 204, 56), 
+  rgb(54, 97, 54),
+  rgb(165, 179, 165)
+   );
+}
+  

@@ -10,4 +10,8 @@ class TomatoesController extends Controller
         $tomatoe->save();
         return 'Saved';
     }
+
+    public function options()
+    {
+    }
 }

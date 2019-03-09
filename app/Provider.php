@@ -21,8 +21,8 @@ class Provider extends Model
         return $query->where('material', 'Tomate');
     }
 
-    // public function materialNames()
-    // {
-    //     return $this->
-    // }
+    public function scopeHoneyProviders($query)
+    {
+        return $query->where('material', 'Miel');
+    }
 }

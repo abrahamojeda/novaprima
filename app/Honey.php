@@ -12,9 +12,4 @@ class Honey extends Model
     {
         return $this->belongsTo(Responsable::class);
     }
-
-    public function provider()
-    {
-        return $this->belongsTo(Provider::class);
-    }
 }

@@ -12,4 +12,14 @@ class Responsable extends Model
     {
         return $this->hasMany(tomatoes::class, 'id');
     }
+
+    public function grinds()
+    {
+        return $this->hasMany(grinds::class, 'id');
+    }
+
+    public function collect_juices()
+    {
+        return $this->hasMany(collect_juices::class, 'id');
+    }
 }

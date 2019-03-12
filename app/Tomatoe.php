@@ -13,8 +13,13 @@ class Tomatoe extends Model
         return $this->belongsTo(Responsable::class);
     }
 
-    public function setLotName($value)
+    public function grinds()
     {
-        $this->attributes['lot'] = 'T-' + $value;
+        return $this->hasMany(grinds::class, 'id');
+    }
+
+    public function collect_juices()
+    {
+        return $this->hasMany(collectjuice::class, 'id');
     }
 }

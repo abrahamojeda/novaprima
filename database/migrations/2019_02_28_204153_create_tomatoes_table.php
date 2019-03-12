@@ -16,7 +16,7 @@ class CreateTomatoesTable extends Migration
         Schema::create('tomatoes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('quantity')->unsigned();
-            $table->string('lot');
+            $table->string('lot')->unique();
             $table->string('observations');
             $table->unsignedInteger('responsable_id'); //pendiente de hacer tabla
             $table->foreign('responsable_id')->references('id')->on('responsables');
